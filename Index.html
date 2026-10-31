@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>کەشوهەوای جیهان 🌍</title>
+<style>
+:root{--bg:#03060d;--gl:rgba(10,18,38,.62);--ln:rgba(255,255,255,.11);--tx:#eaf1ff;--mu:#8da2c8;--a:#4cc9f0}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden;background:radial-gradient(ellipse at 50% 42%,#0b1a3a,var(--bg) 72%);color:var(--tx);font-family:system-ui,"Segoe UI",Tahoma,"Noto Naskh Arabic",sans-serif}
+button,input{font:inherit;color:inherit}
+b{direction:ltr;unicode-bidi:isolate;display:inline-block}
+#gl{position:fixed;inset:0;width:100%;height:100%;touch-action:none}
+.g{background:var(--gl);border:1px solid var(--ln);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+header{position:fixed;top:0;inset-inline:0;z-index:5;display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:14px 18px;pointer-events:none}
+header>*{pointer-events:auto}
+.logo{display:flex;gap:8px;align-items:center;font-weight:800;font-size:22px;margin-inline-end:auto}
+#qf{display:flex;border-radius:14px;overflow:hidden;flex:1 1 200px;max-width:340px}
+#qi{flex:1;background:none;border:0;padding:11px 14px;outline:0;min-width:0}
+#qf button{background:none;border:0;padding:0 14px;cursor:pointer}
+.sg{display:flex;border-radius:14px;overflow:hidden}
+.sg button{background:none;border:0;padding:10px 13px;color:var(--mu);font-weight:600;cursor:pointer}
+.sg button.on{background:var(--a);color:#03121c}
+:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+#pn{position:fixed;top:78px;inset-inline-end:18px;width:min(372px,calc(100vw - 36px));max-height:calc(100% - 178px);overflow:auto;padding:22px;border-radius:24px;z-index:4;animation:in .7s both}
+@keyframes in{from{opacity:0;transform:translateY(16px)}}
+.mu{color:var(--mu)}.sm{font-size:12px;display:flex;justify-content:space-between}
+.tp{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+h2{font-size:24px}h3{font-size:13px;color:var(--mu);margin:20px 0 8px;font-weight:600}
+.bd{font-size:11px;padding:4px 10px;border-radius:99px;background:rgba(76,201,240,.14);color:var(--a);white-space:nowrap}
+.big{display:flex;align-items:center;gap:14px;margin:8px 0 2px}.big i{font-size:58px;font-style:normal}.big b{font-size:68px;font-weight:200;letter-spacing:-2px}
+.gr{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+.ce{padding:11px 6px;border-radius:14px;background:rgba(255,255,255,.06);text-align:center;display:grid;gap:3px;font-size:18px}.ce small{font-size:11px;color:var(--mu)}.ce b{font-size:13px}
+.sp{width:100%;height:70px;display:block}
+.dy{display:grid;grid-template-columns:1fr 36px 48px 48px;align-items:center;padding:7px 0;border-top:1px solid var(--ln);font-size:14px}.dy i{font-style:normal;font-size:20px}
+.hn{text-align:center;padding:12px 4px}.hn div{font-size:46px;margin-bottom:6px}
+.ld{width:34px;height:34px;border:3px solid var(--ln);border-top-color:var(--a);border-radius:50%;margin:40px auto;animation:sn 1s linear infinite}@keyframes sn{to{transform:rotate(360deg)}}
+#cb{position:fixed;bottom:12px;inset-inline:12px;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:4px;scrollbar-width:none}
+#cb::-webkit-scrollbar{display:none}
+.ch{flex:none;padding:9px 14px;border-radius:99px;cursor:pointer;font-size:13px;white-space:nowrap}
+.ch:hover,.ch.on{border-color:var(--a)}
+#lc{position:fixed;bottom:66px;inset-inline-start:18px;z-index:4;display:flex;gap:8px;align-items:center;padding:7px 12px;border-radius:99px;font-size:13px}
+#lc i{width:120px;height:6px;border-radius:9px;background:linear-gradient(90deg,hsl(240,100%,60%),hsl(180,100%,60%),hsl(120,100%,60%),hsl(60,100%,60%),hsl(0,100%,60%))}
+#tp{position:fixed;z-index:9;pointer-events:none;padding:6px 11px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .15s}
+#lb{position:fixed;inset:0;z-index:3;pointer-events:none;overflow:hidden}
+.lb{position:absolute;left:0;top:0;display:none;font-size:12px;font-weight:600;padding:2px 8px;border-radius:8px;background:rgba(4,9,20,.72);white-space:nowrap}
+#zb{position:fixed;inset-inline-start:18px;top:50%;transform:translateY(-50%);z-index:5;display:flex;flex-direction:column;border-radius:16px;overflow:hidden}
+#zb button{background:none;border:0;width:44px;height:44px;font-size:24px;cursor:pointer}
+#zb button+button{border-top:1px solid var(--ln)}
+#zb button:hover{background:rgba(255,255,255,.08)}
+@media(max-width:720px){#pn{top:auto;bottom:62px;inset-inline:12px;width:auto;max-height:42vh}#lc{display:none}.logo{font-size:18px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<header>
+<div class="logo"><span>🌍</span><span id="lt"></span></div>
+<form id="qf" class="g"><input id="qi" autocomplete="off"><button aria-label="search">🔍</button></form>
+<div class="sg g" id="un"><button data-u="C" class="on">°C</button><button data-u="F">°F</button></div>
+<div class="sg g" id="lg"><button data-l="ku">کوردی</button><button data-l="en">EN</button><button data-l="ar">عربي</button></div>
+</header>
+<div id="pn" class="g"></div>
+<div id="lc" class="g">🥶<i></i>🥵</div>
+<div id="cb"></div>
+<div id="tp" class="g"></div>
+<div id="lb"></div>
+<div id="zb" class="g"><button id="zi" aria-label="zoom in">+</button><button id="zo" aria-label="zoom out">−</button></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const $=i=>document.getElementById(i),API='https://api.open-meteo.com/v1/forecast';
+const K=('Duhok,36.87,42.99;Erbil,36.19,44.01;Sulaymaniyah,35.56,45.43;Baghdad,33.31,44.37;Istanbul,41.01,28.98;Tehran,35.69,51.39;Dubai,25.2,55.27;Riyadh,24.71,46.68;Cairo,30.04,31.24;London,51.51,-0.13;Paris,48.86,2.35;Berlin,52.52,13.4;Madrid,40.42,-3.7;Rome,41.9,12.5;Moscow,55.76,37.62;Stockholm,59.33,18.07;Reykjavik,64.15,-21.94;Lagos,6.52,3.38;Nairobi,-1.29,36.82;Cape Town,-33.92,18.42;Mumbai,19.08,72.88;Delhi,28.61,77.21;Bangkok,13.76,100.5;Singapore,1.35,103.82;Beijing,39.9,116.4;Tokyo,35.68,139.69;Seoul,37.57,126.98;Jakarta,-6.2,106.85;Sydney,-33.87,151.21;Auckland,-36.85,174.76;New York,40.71,-74.01;Los Angeles,34.05,-118.24;Toronto,43.65,-79.38;Anchorage,61.22,-149.9;Mexico City,19.43,-99.13;Lima,-12.05,-77.04;São Paulo,-23.55,-46.63;Buenos Aires,-34.6,-58.38').split(';').map(s=>{s=s.split(',');return{n:s[0],la:+s[1],lo:+s[2]}});
+const EM=['☀️','⛅','☁️','🌫️','🌦️','🌧️','❄️','🌦️','⛈️'],wc=c=>c<1?0:c<3?1:c<4?2:c<50?3:c<60?4:c<70?5:c<80?6:c<83?7:c<90?6:8;
+const LC={ku:'ckb',en:'en',ar:'ar'};
+const T={
+ku:{dir:'rtl',t:'کەشوهەوای جیهان',s:'گەڕان بۆ شارێک…',fl:'هەستپێکراو',hu:'شێ',wd:'با',pr:'پەستان',cl:'هەور',sr:'هەڵهاتنی خۆر',ss:'ئاوابوونی خۆر',h:'٢٤ کاتژمێری داهاتوو',d:'پێشبینی ٧ ڕۆژ',hint:'گۆی زەوی بسوڕێنە، زووم بکە و کلیک لە شارێک بکە',demo:'داتای نمایشی (بێ ئینتەرنێت)',live:'ڕاستەوخۆ',nf:'شارەکە نەدۆزرایەوە',c:['ئاسمان ڕوون','کەمێک هەوراوی','هەوراوی','تەمومژ','نمەنم','باران','بەفر','بارانی کتوپڕ','هەورە تریشقە']},
+en:{dir:'ltr',t:'World Weather',s:'Search a city…',fl:'Feels like',hu:'Humidity',wd:'Wind',pr:'Pressure',cl:'Clouds',sr:'Sunrise',ss:'Sunset',h:'Next 24 hours',d:'7-day forecast',hint:'Drag, zoom and tap a city',demo:'Demo data (offline)',live:'Live',nf:'City not found',c:['Clear sky','Partly cloudy','Overcast','Fog','Drizzle','Rain','Snow','Showers','Thunderstorm']},
+ar:{dir:'rtl',t:'طقس العالم',s:'ابحث عن مدينة…',fl:'الإحساس',hu:'الرطوبة',wd:'الرياح',pr:'الضغط',cl:'الغيوم',sr:'الشروق',ss:'الغروب',h:'الـ 24 ساعة القادمة',d:'توقعات 7 أيام',hint:'حرّك الكرة، قرّب واضغط على مدينة',demo:'بيانات تجريبية (بدون إنترنت)',live:'مباشر',nf:'لم يتم العثور على المدينة',c:['سماء صافية','غائم جزئياً','غائم','ضباب','رذاذ','مطر','ثلج','زخات مطر','عاصفة رعدية']}};
+let lang='ku',L=T.ku,F=0,sel=-1,cur=null;
+const tm=v=>Math.round(F?v*1.8+32:v)+'°',wd=v=>F?Math.round(v*.621)+' mph':Math.round(v)+' km/h';
+
+/* بێ ئینتەرنێت: داتای نمایشی */
+const demoT=(la,lo)=>{const m=new Date().getMonth(),s=Math.cos((m-6.5)*Math.PI/6)*(la<0?-1:1);return 30-Math.abs(la)*.55+s*Math.abs(la)*.28};
+function demo(c){const t=demoT(c.la,c.lo),n=(a,f)=>Array.from({length:a},(_,i)=>f(i));
+return{demo:1,current:{time:'',temperature_2m:t,apparent_temperature:t-1,relative_humidity_2m:55,wind_speed_10m:14,pressure_msl:1014,cloud_cover:35,weather_code:1},
+daily:{time:n(7,i=>new Date(Date.now()+i*864e5).toISOString().slice(0,10)),weather_code:n(7,i=>[0,1,2,0,1,5,0][i]),temperature_2m_max:n(7,i=>t+4+Math.sin(i)*2),temperature_2m_min:n(7,i=>t-5+Math.cos(i)*2),sunrise:n(7,()=>'T06:00'),sunset:n(7,()=>'T18:00')},
+hourly:{time:[],temperature_2m:n(24,i=>t-4*Math.cos((i-3)*Math.PI/12))}}}
+
+/* گۆی زەوی ٣D */
+let fly=()=>{},paint=()=>{},addMk=()=>{},mark=()=>{};
+try{
+const R=new THREE.WebGLRenderer({canvas:$('gl'),antialias:true,alpha:true}),S=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1,.01,300),G=new THREE.Group();
+R.setPixelRatio(Math.min(devicePixelRatio,2));S.add(G);
+S.add(new THREE.AmbientLight(0xffffff,.55));const sn=new THREE.DirectionalLight(0xffffff,1.15);sn.position.set(-3,2,4);S.add(sn);
+const cv=document.createElement('canvas');cv.width=1024;cv.height=512;const x=cv.getContext('2d'),gr=x.createLinearGradient(0,0,0,512);
+gr.addColorStop(0,'#10305e');gr.addColorStop(.5,'#0b4a7a');gr.addColorStop(1,'#10305e');x.fillStyle=gr;x.fillRect(0,0,1024,512);x.strokeStyle='rgba(120,190,255,.25)';
+for(let i=0;i<=24;i++){x.beginPath();x.moveTo(i*1024/24,0);x.lineTo(i*1024/24,512);x.stroke()}
+for(let i=0;i<=12;i++){x.beginPath();x.moveTo(0,i*512/12);x.lineTo(1024,i*512/12);x.stroke()}
+const mat=new THREE.MeshPhongMaterial({map:new THREE.CanvasTexture(cv),shininess:14,specular:0x334455}),earth=new THREE.Mesh(new THREE.SphereGeometry(1,96,96),mat);G.add(earth);
+const U=['https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg','https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg'],ld=new THREE.TextureLoader();ld.setCrossOrigin('anonymous');
+(function f(i){i<U.length&&ld.load(U[i],tx=>{tx.anisotropy=R.capabilities.getMaxAnisotropy();mat.map=tx;mat.needsUpdate=true},undefined,()=>f(i+1))})(0);
+const am=new THREE.ShaderMaterial({uniforms:{k:{value:1}},transparent:true,side:THREE.BackSide,blending:THREE.AdditiveBlending,depthWrite:false,
+vertexShader:'varying vec3 n;void main(){n=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+fragmentShader:'uniform float k;varying vec3 n;void main(){float i=pow(max(.7-dot(n,vec3(0,0,1.)),0.),3.);gl_FragColor=vec4(.3,.62,1.,1.)*i*1.8*k;}'});S.add(new THREE.Mesh(new THREE.SphereGeometry(1.2,64,64),am));
+const sp=new Float32Array(2400);for(let i=0;i<2400;i+=3){const r=60+Math.random()*60,a=Math.random()*6.283,b=Math.acos(2*Math.random()-1);sp[i]=r*Math.sin(b)*Math.cos(a);sp[i+1]=r*Math.cos(b);sp[i+2]=r*Math.sin(b)*Math.sin(a)}
+const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.BufferAttribute(sp,3));S.add(new THREE.Points(sg,new THREE.PointsMaterial({color:0xffffff,size:.35,transparent:true,opacity:.8})));
+const hc=document.createElement('canvas');hc.width=hc.height=64;const hx=hc.getContext('2d'),hg=hx.createRadialGradient(32,32,0,32,32,32);
+hg.addColorStop(0,'#fff');hg.addColorStop(.28,'rgba(255,255,255,.85)');hg.addColorStop(1,'rgba(255,255,255,0)');hx.fillStyle=hg;hx.fillRect(0,0,64,64);const halo=new THREE.CanvasTexture(hc);
+const ll=(la,lo,r=1.02)=>{const p=(90-la)*Math.PI/180,t=(lo+180)*Math.PI/180;return new THREE.Vector3(-r*Math.sin(p)*Math.cos(t),r*Math.cos(p),r*Math.sin(p)*Math.sin(t))};
+const sm=o=>new THREE.Sprite(new THREE.SpriteMaterial(Object.assign({map:halo,blending:THREE.AdditiveBlending,depthWrite:false},o)));
+const ring=sm({color:0xffffff,transparent:true,opacity:.6});ring.visible=false;G.add(ring);
+addMk=c=>{const s=sm({color:0x8899aa});s.position.copy(ll(c.la,c.lo));s.scale.setScalar(.08);c.s=s;G.add(s);const l=document.createElement('div');l.className='lb';l.textContent=c.n;$('lb').appendChild(l);c.l=l};
+paint=c=>{c.s&&c.t!=null&&c.s.material.color.setHSL(Math.max(0,Math.min(240,240-(c.t+15)*4))/360,1,.6)};
+mark=c=>{ring.visible=true;ring.position.copy(c.s.position)};
+K.forEach(addMk);
+let rx=.5,ry=-2.3,tx=null,ty=0,drag=0,auto=1,z=3.5,lx=0,ly=0,mv=0,pd=0;const ZMIN=1.1,zoom=f=>{z=Math.max(ZMIN,Math.min(6,1+(z-1)*f))},ps=new Map();
+fly=(c,zz)=>{auto=0;tx=Math.max(-1.2,Math.min(1.2,c.la*Math.PI/180));const t=-(c.lo+90)*Math.PI/180;ty=t+6.2832*Math.round((ry-t)/6.2832);z=Math.max(ZMIN,Math.min(z,zz||(innerWidth<720?2.2:1.7)))};
+const RC=new THREE.Raycaster(),m2=new THREE.Vector2(),cvs=$('gl'),tp=$('tp');
+const hit=e=>{m2.set(e.clientX/innerWidth*2-1,-e.clientY/innerHeight*2+1);RC.setFromCamera(m2,cam);const h=RC.intersectObjects(K.map(c=>c.s)),g=RC.intersectObject(earth)[0];return h[0]&&(!g||h[0].distance<g.distance+.03)?h[0].object&&K.find(c=>c.s===h[0].object):null};
+cvs.onpointerdown=e=>{ps.set(e.pointerId,{clientX:e.clientX,clientY:e.clientY});drag=1;mv=ps.size>1?99:0;pd=0;lx=e.clientX;ly=e.clientY;cvs.setPointerCapture(e.pointerId);tp.style.opacity=0};
+cvs.onpointermove=e=>{if(ps.has(e.pointerId))ps.set(e.pointerId,{clientX:e.clientX,clientY:e.clientY});
+if(ps.size>1){const[a,b]=[...ps.values()],d=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY);if(pd)zoom(pd/d);pd=d;tx=null;return}
+if(drag){const dx=e.clientX-lx,dy=e.clientY-ly,k=.002*(cam.position.z-1);lx=e.clientX;ly=e.clientY;mv+=Math.abs(dx)+Math.abs(dy);ry+=dx*k;rx=Math.max(-1.3,Math.min(1.3,rx+dy*k));tx=null;return}
+const c=hit(e);cvs.style.cursor=c?'pointer':'';if(c){tp.textContent=c.n+(c.t!=null?'  '+tm(c.t):'');tp.style.left=e.clientX+14+'px';tp.style.top=e.clientY+14+'px';tp.style.opacity=1}else tp.style.opacity=0};
+cvs.onpointerup=cvs.onpointercancel=e=>{ps.delete(e.pointerId);pd=0;const r=[...ps.values()][0];if(r){lx=r.clientX;ly=r.clientY}else drag=0;if(e.type=='pointerup'&&!r&&mv<6){const c=hit(e);if(c)pick(K.indexOf(c))}};
+cvs.onwheel=e=>{e.preventDefault();zoom(Math.exp(e.deltaY*(e.deltaMode?33:1)*(e.ctrlKey?.01:.0015)))};
+cvs.ondblclick=e=>{m2.set(e.clientX/innerWidth*2-1,-e.clientY/innerHeight*2+1);RC.setFromCamera(m2,cam);const g=RC.intersectObject(earth)[0];if(!g)return;const p=G.worldToLocal(g.point.clone());fly({la:Math.asin(p.y/p.length())*180/Math.PI,lo:Math.atan2(p.z,-p.x)*180/Math.PI-180},1+(z-1)*.45)};
+$('zi').onclick=()=>zoom(.5);$('zo').onclick=()=>zoom(2);
+const rs=()=>{R.setSize(innerWidth,innerHeight);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()};
+addEventListener('resize',rs);rs();z=innerWidth<720?5.2:3.5;cam.position.z=z;
+const v3=new THREE.Vector3(),labels=()=>{const on=cam.position.z<1.9;K.forEach(c=>{const l=c.l;if(!l)return;c.s.getWorldPosition(v3);if(!on||v3.z<1/cam.position.z){l.style.display='none';return}v3.project(cam);l.style.display='block';l.style.transform=`translate(${(v3.x+1)*innerWidth/2}px,${(1-v3.y)*innerHeight/2}px) translate(-50%,12px)`})};
+(function loop(t){requestAnimationFrame(loop);
+if(tx!==null){rx+=(tx-rx)*.07;ry+=(ty-ry)*.07;if(Math.abs(tx-rx)+Math.abs(ty-ry)<.003)tx=null}else if(auto&&!drag)ry+=.0012;
+G.rotation.set(rx,ry,0);cam.position.z+=(z-cam.position.z)*.12;
+const sc=Math.min(.1,.03*(cam.position.z-1)+.005);K.forEach(c=>c.s.scale.setScalar(sc));ring.scale.setScalar(sc*(1.75+.45*Math.sin(t/260)));am.uniforms.k.value=Math.max(0,Math.min(1,(cam.position.z-1.25)/.6));
+R.render(S,cam);labels()})(0);
+}catch(e){console.warn('3D unavailable',e)}
+
+/* ڕووکار و داتا */
+const chips=()=>$('cb').innerHTML=K.map((c,i)=>`<button class="ch g${i==sel?' on':''}" onclick="pick(${i})">${c.w!=null?EM[wc(c.w)]:'📍'} ${c.n} <b>${c.t!=null?tm(c.t):''}</b></button>`).join('');
+const hint=()=>$('pn').innerHTML=`<div class="hn"><div>🌍</div><p class="mu">${L.hint}</p></div>`;
+function render(){if(!cur)return;const[c,d]=cur,u=d.current,D=d.daily,k=wc(u.weather_code),
+i0=Math.max(0,d.hourly.time.findIndex(t=>t>=u.time.slice(0,13))),a=d.hourly.temperature_2m.slice(i0,i0+24),mn=Math.min(...a),mx=Math.max(...a),
+p=a.map((v,i)=>(i*100/(a.length-1)).toFixed(1)+','+(34-(v-mn)/(mx-mn||1)*28).toFixed(1)).join(' ');
+$('pn').innerHTML=`<div class="tp"><div><h2>${c.n}</h2><p class="mu sm" style="justify-content:flex-start">🕐 ${u.time.slice(-5)}</p></div><span class="bd">● ${d.demo?L.demo:L.live}</span></div>
+<div class="big"><i>${EM[k]}</i><b>${tm(u.temperature_2m)}</b></div>
+<p>${L.c[k]}</p><p class="mu sm" style="justify-content:flex-start;gap:6px">${L.fl} <b>${tm(u.apparent_temperature)}</b></p>
+<div class="gr">${[['💧',L.hu,u.relative_humidity_2m+'%'],['🌬️',L.wd,wd(u.wind_speed_10m)],['🧭',L.pr,Math.round(u.pressure_msl)+' hPa'],['☁️',L.cl,u.cloud_cover+'%'],['🌅',L.sr,D.sunrise[0].slice(-5)],['🌇',L.ss,D.sunset[0].slice(-5)]].map(x=>`<div class="ce">${x[0]}<small>${x[1]}</small><b>${x[2]}</b></div>`).join('')}</div>
+<h3>${L.h}</h3><svg class="sp" viewBox="0 0 100 40" preserveAspectRatio="none"><polygon points="${p} 100,40 0,40" fill="rgba(76,201,240,.15)"/><polyline points="${p}" fill="none" stroke="#4cc9f0" stroke-width="2" vector-effect="non-scaling-stroke"/></svg><div class="sm mu"><b>${tm(mn)}</b><b>${tm(mx)}</b></div>
+<h3>${L.d}</h3>${D.time.map((t,i)=>`<div class="dy"><span>${new Date(t+'T12:00').toLocaleDateString(LC[lang],{weekday:'short'})}</span><i>${EM[wc(D.weather_code[i])]}</i><b>${tm(D.temperature_2m_max[i])}</b><b class="mu">${tm(D.temperature_2m_min[i])}</b></div>`).join('')}`}
+async function pick(i){const c=K[i];sel=i;fly(c);mark(c);chips();$('pn').innerHTML='<div class="ld"></div>';let d;
+try{d=await(await fetch(`${API}?latitude=${c.la}&longitude=${c.lo}&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,pressure_msl,cloud_cover,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset&hourly=temperature_2m&forecast_days=7&timezone=auto`)).json();if(!d.current)throw 0}catch(e){d=demo(c)}
+if(sel!=i)return;cur=[c,d];c.t=d.current.temperature_2m;c.w=d.current.weather_code;paint(c);render();chips()}
+async function loadAll(){try{const j=await(await fetch(`${API}?latitude=${K.map(c=>c.la)}&longitude=${K.map(c=>c.lo)}&current=temperature_2m,weather_code`)).json();
+(Array.isArray(j)?j:[j]).forEach((d,i)=>{K[i].t=d.current.temperature_2m;K[i].w=d.current.weather_code})}catch(e){K.forEach(c=>{c.t=demoT(c.la,c.lo);c.w=1})}K.forEach(paint);chips()}
+function setLang(l){lang=l;L=T[l];const h=document.documentElement;h.lang=LC[l];h.dir=L.dir;$('lt').textContent=L.t;document.title=L.t+' 🌍';$('qi').placeholder=L.s;
+document.querySelectorAll('#lg button').forEach(b=>b.classList.toggle('on',b.dataset.l==l));chips();cur?render():hint()}
+$('lg').onclick=e=>e.target.dataset.l&&setLang(e.target.dataset.l);
+$('un').onclick=e=>{const u=e.target.dataset.u;if(!u)return;F=+(u=='F');[...$('un').children].forEach(b=>b.classList.toggle('on',b.dataset.u==u));chips();render()};
+$('qf').onsubmit=async e=>{e.preventDefault();const v=$('qi').value.trim();if(!v)return;
+try{const r=(await(await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(v)}&count=1&language=${lang=='ku'?'en':lang}`)).json()).results;if(!r)throw 0;
+const x=r[0],c={n:x.name+(x.country?', '+x.country:''),la:x.latitude,lo:x.longitude};K.push(c);addMk(c);pick(K.length-1)}
+catch(_){$('pn').innerHTML=`<p class="mu">${L.nf}</p>`}};
+setLang('ku');loadAll();
+</script>
+</body>
+</html>
